@@ -37,6 +37,19 @@ export function createMenuList(items){
     return ul;
   };
 
+export function createMenuCard(items) {
+  const article = document.createElement('article');
+  article.classList.add('article');
+  
+
+    items.forEach(item => {
+
+      article.appendChild(item);
+    });
+
+    return article;
+  };
+
 
 /**
  * Creates a section element, fills it with dynamically generated elements
